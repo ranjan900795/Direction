@@ -1,0 +1,103 @@
+.background{
+    background-image: url('/static/img/front.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+    
+}
+
+.height_amenities{
+    height: 95px;
+}
+
+.back{
+    background-color: #693a1c36;
+}
+
+.text{
+    font-size: 50px;
+    font-weight: bold;
+    color: #222b3363;
+}
+
+.background_homepage{
+    background-image: url('/static/img/leh.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+}
+
+.back{
+    background-image: url('/static/img/luggage.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+}
+
+.grad{
+    
+
+    background-image: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+    background-size : 100% 100%;
+    background-repeat : no-repeat;
+}
+
+
+
+.form_back{
+    background-color: transparent;
+}
+
+.text_price{
+    color:#e66f01
+}
+
+.text_guide{
+    color: #93894a;
+}
+
+.text_rental{
+    color: #1a5d94;
+}
+
+.amenities{
+    box-shadow: 0px -2px 40px grey;
+}
+
+.north{
+    background-image: url('/static/img/north.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+}
+
+.south{
+    background-image: url('/static/img/south.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+}
+
+.east{
+    background-image: url('/static/img/east.jpeg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+}
+
+.west{
+    background-image: url('/static/img/west.jpeg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;    
+}
+
+.central{
+    background-image: url('/static/img/central.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;    
+}
+
+.size{
+    font-size: 48px;
+}
+
+.background_img{
+    background-image: url('/static/img/luggage.jpg');
+    background-repeat : no-repeat;
+    background-size : 100% 100%;
+}
+
