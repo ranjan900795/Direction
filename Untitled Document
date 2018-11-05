@@ -1,0 +1,29 @@
+CREATE TABLE deals(
+    id int NOT NULL AUTO_INCREMENT,
+    destination varchar(100) NOT NULL,
+    price varchar(25) NOT NULL,
+    picture varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
+CREATE TABLE parts(
+    id int NOT NULL AUTO_INCREMENT,
+    parts varchar(100) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
+INSERT INTO parts (parts)
+	VALUES ("north");
+	
+INSERT INTO parts (parts)
+	VALUES ("east");
+	
+INSERT INTO parts (parts)
+	VALUES ("south");
+	
+INSERT INTO parts (parts)
+	VALUES ("west");
+	
+INSERT INTO parts (parts)
+	VALUES ("central");
+

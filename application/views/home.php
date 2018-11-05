@@ -90,7 +90,7 @@
                         <p class="text-uppercase text-white text-center font-weight-bold h2">Heart Of India</p>
                         <p class="text-uppercase text-white text-center font-weight-bold h3 ">Central</p>
 
-                        <a href="#" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
+                        <a href="../compass/part/central" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
                     </div>
                 </div>  
                 <div class="col-lg-6 h-75 col-12 p-0">
@@ -101,7 +101,7 @@
                                     <p class="text-uppercase text-white text-center font-weight-bold h4">History Of India</p>
                                     <p class="text-uppercase text-white text-center font-weight-bold h5 ">North</p>
 
-                                    <a href="../compass/north" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
+                                    <a href="../compass/part/north" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
                                 </div> 
                             </div>
                             <div class="col-6 h-100 east d-flex align-items-end">
@@ -121,7 +121,7 @@
                                     <p class="text-uppercase text-white text-center font-weight-bold h4">Western Culture Of India</p>
                                     <p class="text-uppercase text-white text-center font-weight-bold h5 ">West</p>
 
-                                    <a href="#" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
+                                    <a href="../compass/part/west" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
                                 </div> 
                             </div>
                             <div class="col-6 p-0 h-100 south d-flex align-items-end">
@@ -129,7 +129,7 @@
                                     <p class="text-uppercase text-white text-center font-weight-bold h4">Temple Of India</p>
                                     <p class="text-uppercase text-white text-center font-weight-bold h5 ">South</p>
 
-                                    <a href="#" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
+                                    <a href="../compass/part/south" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
                                 </div> 
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                 </div>
             </div> 
 
-            <div class="row bg-white h-25">
+            <div class="row  h-25">
                 <div class="col-12 ">
                     <p class="text-uppercase font-weight-bold h2 text-center text-danger m-0 mt-5">The best offers with rooms</p>
                 </div>
@@ -145,7 +145,7 @@
                     <p class="font-weight-normal h6 text-center text-secondary m-0 mb-5">No matter what you're into, India is into it too.</p>
                 </div>
             </div>
-            <div class="row pb-4 bg-white h-75">
+            <div class="row pb-4 ">
                 <div class="col-sm-6 col-12 ">
                     <div class="row ">
                         <div class="col-12 col-md-6 py-4 ">
@@ -199,7 +199,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row bg-light h-25">
+            <div class="row h-25">
                 <div class="col-12 ">
                     <p class="text-uppercase font-weight-bold h2 text-center text-danger m-0 mt-5">Other issues we can help you with</p> 
                 </div>
@@ -207,7 +207,7 @@
                     <p class="font-weight-normal h6 text-center text-secondary m-0 mb-5">No matter what you're into, India is into it too.</p>
                 </div>
             </div>
-            <div class="row bg-light my-5 h-75">
+            <div class="row">
                 <div class="col-md-3 col-sm-6 p-0 pl-md-4 pl-4">
                     <div class="col-11 h-25 m-0 p-0">
                         <img src="/static/img/rental.jpg" class="w-100 h-100"/>

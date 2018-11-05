@@ -19,14 +19,20 @@ class Compass extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
-    public function north() {
+    public function part($choice) {
+        $this->load->model('deals');
+        $part['parts'] = $this->deals->parts_select($choice);
+
+
         if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
             $this->load->view('header_loggedin');
-            $this->load->view('north');
+            $this->load->view('part');
             $this->load->view('footer');
         } else {
             $this->load->view('header');
-            $this->load->view('north');
+            $this->load->model('deals');
+            $part['parts'] = $this->deals->parts_select($choice);
+            $this->load->view('part', $part);
             $this->load->view('footer');
         }
     }
