@@ -12,17 +12,10 @@ class Deals extends CI_Model {
 
     
     public function parts_select($choice) {
-        $query = $this->db->get('parts');
-        /* @var $row Deals */
+        $query = $this->db->get("$choice");
+        return ($query->result());
         
-        foreach ($query->result() as $row) {
-            if ($choice == $row->parts) {
-                $part = $row->parts;
-                return ($part);
-                
-                
-            }
-        }
+        
         
     }
     

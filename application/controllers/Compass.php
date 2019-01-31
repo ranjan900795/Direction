@@ -20,18 +20,19 @@ class Compass extends CI_Controller {
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
     public function part($choice) {
-        $this->load->model('deals');
-        $part['parts'] = $this->deals->parts_select($choice);
+
 
 
         if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
             $this->load->view('header_loggedin');
-            $this->load->view('part');
+            $this->load->model('deals');
+            $part['part'] = $this->deals->parts_select($choice);
+            $this->load->view('part', $part);
             $this->load->view('footer');
         } else {
             $this->load->view('header');
             $this->load->model('deals');
-            $part['parts'] = $this->deals->parts_select($choice);
+            $part['part'] = $this->deals->parts_select($choice);
             $this->load->view('part', $part);
             $this->load->view('footer');
         }

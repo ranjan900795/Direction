@@ -8,7 +8,12 @@
     <body>
         <div class="container-fluid">
             <div class="row h-75 part d-flex align-items-end px-4 ">
-                
+                <div class="col-12 ">
+                    <div class="col-sm-6 col-8 bg-quote rounded">
+                        <p class=" text-dark"><i class="fa fa-4x fa-quote-left text-danger"></i><span class="h2 mx-1 font-weight-bold text-white show1">We travel not to escape life, but for life not to escape us.</span><i class="fa fa-4x fa-quote-right text-danger"></i></p>
+                    </div>
+
+                </div>
                 <div class="col-lg-6 col-md-8 col-12 bg-white ">
                     <div class="row">
                         <div class="col-3 btn py-3 rounded-0 flights bg-danger" id="999">
@@ -61,108 +66,29 @@
                 <div class="col-12 pl-5">
                     <div class="col-11 m-auto">
                         <div class="row mt-4">
-                            <div class="col-md-4 col-12 ">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12 ">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        <?php
-                                        echo $parts;
-                                        ?>
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
+                            <?php foreach ($part as $row) { ?>
+                                <div class="col-md-4 col-12 mb-4">                                
+                                    <div class="row ">
+                                        <div class="col-4 rounded-left border field_height">
+                                            1
+                                        </div>
+                                        <div class="col-7 rounded-right border field_height">
+                                            <p class="font-weight-bold text-uppercase font_style"><?php
+                                                $dest = $row->destination;
+                                                print_r($dest);
+                                                ?></p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md-4 col-12 ">
-                                <div class="row ">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-md-4 col-12">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-12">
-                                <div class="row ">
-                                    <div class="col-4 rounded-left border field_height">
-                                        1
-                                    </div>
-                                    <div class="col-7 rounded-right border field_height">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
+                            <?php }
+                            ?>
                         </div>
                     </div>
-
                 </div>
+
             </div>
-            <div class="row mt-5 ">
+
+            <div class="row mt-5  ">
                 <div class="col-12 ">
                     <div class="col-1 m-auto border border-danger">                        
                     </div>

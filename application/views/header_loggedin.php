@@ -8,7 +8,7 @@
         <div class="container-fluid p-0">
             <div class="col-12 p-0 bg-white top">
                 <nav class="navbar navbar-expand-lg navbar-light p-0 ">
-                    <a class="navbar-brand " href="../welcome/home"><img src="/static/img/direction.jpg" class="height_logo"/><span class="text-danger font-weight-bold m-0 text-uppercase logo_name">Direction</span></a>
+                    <a class="navbar-brand " href="../../welcome/home"><img src="/static/img/direction.jpg" class="height_logo"/><span class="text-danger font-weight-bold m-0 text-uppercase logo_name">Direction</span></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon "></span>
                     </button>
@@ -41,7 +41,7 @@
 
                                         <div class="dropdown-divider"></div>
 
-                                        <a class="dropdown-item" href="../registration/signout">Logout</a>
+                                        <a class="dropdown-item" href="../../registration/signout">Logout</a>
 
                                     </div>
                                 </div>

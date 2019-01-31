@@ -4,10 +4,20 @@
     background-size: 100% 100%;
 }
 
+.bg-quote{
+    background-color: #454c714f;
+}
+
 .field_height{
     height:90px;
+    background-color: white;
 }
 
 .font_design{
     font-size: 20px;
+}
+
+.font_style{
+    font-family: bookman;
+    font-size: 24px;
 }

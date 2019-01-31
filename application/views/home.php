@@ -109,7 +109,7 @@
                                     <p class="text-uppercase text-white text-center font-weight-bold h4">Heritage Of India</p>
                                     <p class="text-uppercase text-white text-center font-weight-bold h5 ">East</p>
 
-                                    <a href="#" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
+                                    <a href="../compass/part/east" class="text-uppercase text-white d-flex justify-content-center font-weight-bold h6">Visit ></a>
                                 </div> 
                             </div>
                         </div>
