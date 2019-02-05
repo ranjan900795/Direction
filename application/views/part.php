@@ -66,17 +66,21 @@
                 <div class="col-12 pl-5">
                     <div class="col-11 m-auto">
                         <div class="row mt-4">
-                            <?php foreach ($part as $row) { ?>
+                            <?php foreach ($part as $row) { 
+                                $dest = $row->destination; ?>
                                 <div class="col-md-4 col-12 mb-4">                                
                                     <div class="row ">
                                         <div class="col-4 rounded-left border field_height">
                                             1
                                         </div>
-                                        <div class="col-7 rounded-right border field_height">
-                                            <p class="font-weight-bold text-uppercase font_style"><?php
-                                                $dest = $row->destination;
-                                                print_r($dest);
-                                                ?></p>
+                                        <div class="col-7 rounded-right border field_height d-flex align-items-center">
+                                           
+                                            <p class="font-weight-bold text-uppercase my-2 text-center font_style"><a href="../../compass/destination/<?php print_r($dest) ?>" class="text-dark">
+                                                trips to
+                                                <?php                                             
+                                                                                                
+                                                print_r( $dest);
+                                                ?></a></p>
                                         </div>
                                     </div>
                                 </div>

@@ -1,3 +1,4 @@
+
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -36,6 +37,14 @@ class Compass extends CI_Controller {
             $this->load->view('part', $part);
             $this->load->view('footer');
         }
+    }
+    
+    public function destination($dest){
+        $this->load->view('header');
+        $this->load->view('destination');
+        $this->load->view('footer');
+        
+        
     }
 
 }

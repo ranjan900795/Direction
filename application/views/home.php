@@ -9,27 +9,44 @@
         <div class="container-fluid">
 
             <div class="row background_homepage h-75">
-                <div class="col-8 m-auto ">
-                    <p class="text-uppercase text-white font-weight-bold display-4 text-center m-0">Choose Your Direction</p>
+                <div class="col-8 m-auto h-75 d-flex align-items-center">
+                    <div class="col-12">
+                        <p class="text-uppercase text-white font-weight-bold display-4 text-center m-0">Choose Your Direction</p>
 
 
-                    <p class="text-white text-center font-weight-normal h5 m-0">Discover and book amazing things to do at exclusive prices</p>
+                        <p class="text-white text-center font-weight-normal h5 m-0">Discover and book amazing things to do at exclusive prices</p>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <form action="" method="GET"> 
-                        <div class="row ">
-                            <div class="col-xs-6 col-md-8 m-auto">
-                                <div class="input-group ">
-                                    <input type="text" class="form-control form-control-lg rounded-0" placeholder="Search by destination" id="txtSearch"/>
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-danger btn-lg rounded-0" type="submit">
-                                            <span class="font-weight-bold text-white">Search</span>
-                                        </button>
-                                    </div>
-                                </div>
+
+                <div class="col-9 mx-auto  d-flex align-items-end">
+                    <div class="col p-0">
+                        <div class="row  bg-white">
+                            <div class="col py-3 text-center font-weight-bold border-bottom border-danger">
+                                Gomateshwara
+                                
+                            </div>
+                            <div class="col py-3 text-center font-weight-bold ">
+                                Golden Temple
+                            </div>
+                            <div class="col py-3 text-center font-weight-bold">
+                                Taj Mahal
+                            </div>
+                            <div class="col py-3 text-center font-weight-bold ">
+                                Hampi
+                            </div>
+                            <div class="col py-3 text-center font-weight-bold ">
+                                Sun Temple
+                            </div>
+                            <div class="col py-3 text-center font-weight-bold ">
+                                Nalanda
+                            </div>
+                            <div class="col py-3 text-center font-weight-bold ">
+                                Khajuraho 
                             </div>
                         </div>
-                    </form>
+                    </div>
+
+
                 </div>
             </div>
             <div class="row amenities height_amenities  bg-white">

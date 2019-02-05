@@ -32,4 +32,29 @@ CREATE TABLE north(
     id int NOT NULL AUTO_INCREMENT,
     destination varchar(100) NOT NULL,
     PRIMARY KEY (`id`)
-);   
+); 
+
+INSERT INTO north (destination)
+	VALUES ("TRIPS TO KASHMIR");
+	
+INSERT INTO north (destination)
+	VALUES ("TRIPS TO UTTARAKHAND");
+	
+INSERT INTO north (destination)
+	VALUES ("TRIPS TO NAGALAND"); 
+	
+	
+CREATE TABLE south(
+    id int NOT NULL AUTO_INCREMENT,
+    destination varchar(100) NOT NULL,
+    PRIMARY KEY (`id`)
+); 
+
+INSERT INTO south (destination)
+	VALUES ("TRIPS TO KERELA"); 
+	
+INSERT INTO south (destination)
+	VALUES ("TRIPS TO kARNATAKA"); 
+	
+INSERT INTO south (destination)
+	VALUES ("TRIPS TO TAMIL NADU"); 
