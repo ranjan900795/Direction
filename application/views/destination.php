@@ -1,4 +1,4 @@
-<html>
+    <html>
     <head>
         <link rel="stylesheet" href="/static/css/bootstrap.css"/>
     </head>
@@ -20,67 +20,88 @@
                         <p class="font-weight-bold text-uppercase h4 mt-5">Popular Activities In Mumbai</p>
                     </div>
                     <div class="row border m-0 justify-content-around">
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
-                            1
-                        </div>
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
-                            1
-                        </div>
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
-                            1
-                        </div>
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
-                            1
-                        </div>
+                        <?php
+                        foreach ($activity as $row) {
+                            $name = $row->name;
+                            $price = $row->price;
+                            $id = $row->id;
+                            ?>
+                            <div class="col-lg-2 col-sm-5 col-9 my-2 mx-lg-5 border p-0">
+
+                                <div class="col h-25 border">
+                                    1
+                                </div>
+                                <div class="col  border">
+                                    <?php
+                                    print_r($name);
+                                    ?>
+                                </div>
+                                <div class="col  border">
+                                    <div class="row p-0">
+                                        <div class="col-6 border">
+                                            <?php
+                                            print_r($price);
+                                            ?>
+                                        </div>
+                                        <div class="col-6 border p-0">
+                                                <a href="../../cart/add/<?php echo $id; ?> "><button type = "button" class = "btn btn-warning w-100 border-0">Add To Cart</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        <?php }
+                        ?>
+
                     </div>
-                    <div class="col-12 border">
-                        <p class="font-weight-bold text-uppercase h4 mt-5">Discover And Book the Best Activities</p>
+                    <div class = "col-12 border">
+                        <p class = "font-weight-bold text-uppercase h4 mt-5">Discover And Book the Best Activities</p>
                     </div>
-                    <div class="col-12 border h-75">
+                    <div class = "col-12 border h-75">
                         1
                     </div>
-                    <div class="col-12 border">
-                        <p class="font-weight-bold text-uppercase h4 mt-5">Things To Do In Mumbai</p>
+                    <div class = "col-12 border">
+                        <p class = "font-weight-bold text-uppercase h4 mt-5">Things To Do In Mumbai</p>
                     </div>
-                    <div class="row border m-0 justify-content-around">
-                        <div class="col-lg-3 col-5 h-25 my-2 border">
+                    <div class = "row border m-0 justify-content-around">
+                        <div class = "col-lg-3 col-sm-5 col-9 h-25 my-2 border">
                             1
                         </div>
-                        <div class="col-lg-3 col-5 h-25 my-2 border">
+                        <div class = "col-lg-3 col-sm-5 col-9 h-25 my-2 border">
                             1
                         </div>
-                        <div class="col-lg-3 col-5 h-25 my-2 border">
+                        <div class = "col-lg-3 col-sm-5 col-9 h-25 my-2 border">
                             1
                         </div>
                     </div>
-                    <div class="col-12 border">
-                        <p class="font-weight-bold text-uppercase h4 mt-5 mb-3">Travel Tips</p>
+                    <div class = "col-12 border">
+                        <p class = "font-weight-bold text-uppercase h4 mt-5 mb-3">Travel Tips</p>
                     </div>
-                    <div class="col-12 border bg-light h-75">
+                    <div class = "col-12 border bg-light h-75">
                         1
                     </div>
-                    <div class="col-12 border">
-                        <p class="font-weight-bold text-uppercase h4 mt-5">Nearby Destinations</p>
+                    <div class = "col-12 border">
+                        <p class = "font-weight-bold text-uppercase h4 mt-5">Nearby Destinations</p>
                     </div>
-                    <div class="row border m-0 justify-content-around">
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
+                    <div class = "row border m-0 justify-content-around">
+                        <div class = "col-lg-2 col-5 h-25 my-2 border">
                             1
                         </div>
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
+                        <div class = "col-lg-2 col-5 h-25 my-2 border">
                             1
                         </div>
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
+                        <div class = "col-lg-2 col-5 h-25 my-2 border">
                             1
                         </div>
-                        <div class="col-lg-2 col-5 h-25 my-2 border">
+                        <div class = "col-lg-2 col-5 h-25 my-2 border">
                             1
                         </div>
                     </div>
-                    <div class="col-12 border pt-4 pb-5 d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-warning ">Explore All Destinations</button>
+                    <div class = "col-12 border pt-4 pb-5 d-flex justify-content-center">
+                        <button type = "button" class = "btn btn-outline-warning ">Explore All Destinations</button>
                     </div>
                 </div>
             </div>
         </div>
     </body>
-</html>
+</html>                                    

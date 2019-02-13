@@ -67,7 +67,7 @@
                     <div class="col-11 m-auto">
                         <div class="row mt-4">
                             <?php foreach ($part as $row) { 
-                                $dest = $row->destination; ?>
+                                $dest = $row->dest; ?>
                                 <div class="col-md-4 col-12 mb-4">                                
                                     <div class="row ">
                                         <div class="col-4 rounded-left border field_height">

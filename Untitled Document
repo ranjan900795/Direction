@@ -6,48 +6,63 @@ CREATE TABLE deals(
     PRIMARY KEY (`id`)
 );
 
-CREATE TABLE parts(
+CREATE TABLE india(
     id int NOT NULL AUTO_INCREMENT,
     parts varchar(100) NOT NULL,
     PRIMARY KEY (`id`)
 );
 
-INSERT INTO parts (parts)
+INSERT INTO india (parts)
 	VALUES ("north");
 	
-INSERT INTO parts (parts)
+INSERT INTO india (parts)
 	VALUES ("east");
 	
-INSERT INTO parts (parts)
+INSERT INTO india (parts)
 	VALUES ("south");
 	
-INSERT INTO parts (parts)
+INSERT INTO india (parts)
 	VALUES ("west");
 	
-INSERT INTO parts (parts)
+INSERT INTO india (parts)
 	VALUES ("central");
  
  
-CREATE TABLE north(
+CREATE TABLE destination(
     id int NOT NULL AUTO_INCREMENT,
-    destination varchar(100) NOT NULL,
-    PRIMARY KEY (`id`)
-); 
+    dest varchar(355) NOT NULL,
+    india_id int NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY fk_india(india_id)
+    REFERENCES india(id)
+);
 
-INSERT INTO north (destination)
-	VALUES ("TRIPS TO KASHMIR");
-	
-INSERT INTO north (destination)
-	VALUES ("TRIPS TO UTTARAKHAND");
-	
-INSERT INTO north (destination)
-	VALUES ("TRIPS TO NAGALAND"); 
-	
-	
-CREATE TABLE south(
+CREATE TABLE activities(
     id int NOT NULL AUTO_INCREMENT,
-    destination varchar(100) NOT NULL,
-    PRIMARY KEY (`id`)
+    name varchar(355) NOT NULL,
+    price varchar(25) NOT NULL,
+    destination_id int NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY fk_destination(destination_id)
+    REFERENCES destination(id)
+);
+
+ALTER TABLE activities
+MODIFY COLUMN price double; 
+
+CREATE TABLE cart(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(355) NOT NULL,
+    price varchar(25) NOT NULL,
+    qty int(11) NOT NULL,
+    total_price double NOT NULL,
+    activities_id int NOT NULL,
+    users_id int NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY fk_activities(activities_id)
+    REFERENCES activities(id),
+    FOREIGN KEY fk_users(users_id)
+    REFERENCES users(id)
 ); 
 
 INSERT INTO south (destination)
@@ -56,5 +71,4 @@ INSERT INTO south (destination)
 INSERT INTO south (destination)
 	VALUES ("TRIPS TO kARNATAKA"); 
 	
-INSERT INTO south (destination)
-	VALUES ("TRIPS TO TAMIL NADU"); 
+ 

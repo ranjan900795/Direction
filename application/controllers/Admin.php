@@ -28,5 +28,17 @@ class Admin extends CI_Controller {
         $this->places->upload_places();
         
     }
+    
+    public function activities() {
+        $this->load->view('activities');
+    }
+    
+    public function activities_upload() {
+        $this->load->model('places');
+        $this->places->upload_activities();
+        
+    }
+    
+    
 
 }

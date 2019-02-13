@@ -22,7 +22,7 @@
                                 <a class="nav-link font-weight-bold text-danger h6" href="../welcome/buisness">Direction For Buisness</a>
                             </li>
                             <li class="nav-item ml-4">
-                                <a class="nav-link font-weight-bold text-danger h6" href="../welcome/cart">Cart</a>
+                                <a class="nav-link font-weight-bold text-danger h6" href="../../cart/shopping_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
                             </li>
 
                             <li class="nav-item ml-4"> 

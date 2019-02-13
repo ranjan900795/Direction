@@ -26,25 +26,33 @@ class Compass extends CI_Controller {
 
         if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
             $this->load->view('header_loggedin');
-            $this->load->model('deals');
-            $part['part'] = $this->deals->parts_select($choice);
+            $this->load->model('places');
+            $part['part'] = $this->places->parts_select($choice);
             $this->load->view('part', $part);
             $this->load->view('footer');
         } else {
             $this->load->view('header');
-            $this->load->model('deals');
-            $part['part'] = $this->deals->parts_select($choice);
+            $this->load->model('places');
+            $part['part'] = $this->places->parts_select($choice);
             $this->load->view('part', $part);
             $this->load->view('footer');
         }
     }
-    
-    public function destination($dest){
-        $this->load->view('header');
-        $this->load->view('destination');
-        $this->load->view('footer');
-        
-        
+
+    public function destination($dest) {
+        if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
+            $this->load->view('header_loggedin');
+            $this->load->model('places');
+            $activity['activity'] = $this->places->activities_select($dest);
+            $this->load->view('destination', $activity);
+            $this->load->view('footer');
+        } else {
+            $this->load->view('header');
+            $this->load->model('places');
+            $activity['activity'] = $this->places->activities_select($dest);
+            $this->load->view('destination', $activity);
+            $this->load->view('footer');
+        }
     }
 
 }
