@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row  my-5">
                 <div class="col-10 m-auto border">
-                    <form method="POST" action="../admin/activities_upload" class="px-3 py-3">
+                    <form method="POST" action="../admin/activities_upload" enctype="multipart/form-data" class="px-3 py-3">
 
                         <div class="form-group m-0 mb-2">
 
@@ -15,7 +15,7 @@
 
                         <div class="form-group">
                             <label for="exampleFormControlFile1">image</label>
-                            <input type="file" name="photo" class="form-control-file" id="file">
+                            <input type="file" name="file" class="form-control-file" id="file">
                         </div>
 
                         <div class="form-group col-md-2">

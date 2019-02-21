@@ -58,9 +58,13 @@
                                     </div>
                                 </div>
                                 <div class="col-1  d-flex justify-content-center align-items-center p-0">
-                                    <?php
+                                    <a href="../cart/update/<?php echo $id; ?>/0" class="font-weight-bold text-dark " ><button type="button" class="" id="dec" disabled>-</button></a>
+                                    <p class="font-weight-bold m-auto" >
+                                    <?php 
                                     print_r($qty);
                                     ?>
+                                    </p>
+                                    <a href="../cart/update/<?php echo $id; ?>/1" class="font-weight-bold text-dark"><button type="button"> +</button></a>
                                 </div>
                                 <div class="col-2 d-flex justify-content-center align-items-center p-0">
                                     <i class="fa fa-inr" aria-hidden="true"></i> <?php
@@ -101,5 +105,6 @@
         <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="/static/js/bootstrap.js"></script>
         <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/cart.js"></script>
     </body>
 </html>

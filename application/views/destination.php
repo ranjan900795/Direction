@@ -1,4 +1,4 @@
-    <html>
+<html>
     <head>
         <link rel="stylesheet" href="/static/css/bootstrap.css"/>
     </head>
@@ -44,7 +44,7 @@
                                             ?>
                                         </div>
                                         <div class="col-6 border p-0">
-                                                <a href="../../cart/add/<?php echo $id; ?> "><button type = "button" class = "btn btn-warning w-100 border-0">Add To Cart</button></a>
+                                            <a href="../../cart/add/<?php echo $id; ?> "><button type = "button" class = "btn btn-warning w-100 border-0">Add To Cart</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -103,5 +103,6 @@
                 </div>
             </div>
         </div>
+        
     </body>
 </html>                                    

@@ -41,5 +41,11 @@ class Cart extends CI_Controller {
         $this->shopcart->delete_item($id);
         header("location:../../cart/shopping_cart");
     }
+    
+    public function update($id,$ch){
+        $this->load->model('shopcart');
+        $this->shopcart->update_item($id,$ch);
+        header("location:../../../cart/shopping_cart");
+    }
 
 }

@@ -51,8 +51,25 @@ class Places extends CI_Model {
         $name = $_POST["name"];
         $price = $_POST["price"];
         $dest = $_POST["dest"];
-        $file_name = $_FILES["photo"]["name"];
-        print_r($file_name);
+
+
+
+
+        $config['upload_path'] = './static/uploads/';
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
+        $config['file_name'] = $_FILES['file']['name'];
+
+        //Load upload library and initialize configuration
+
+        echo $config['file_name'];
+
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $config['upload_path'].$config['file_name'])) {
+            $picture = $config['file_name'];
+        } else {
+            echo 'sorry';
+            
+        }
+
 
         $this->db->select('id');
         $this->db->where('dest', "$dest");
@@ -60,12 +77,14 @@ class Places extends CI_Model {
         foreach ($query->result() as $row) {
             $id = $row->id;
         }
-
+        //Prepare array of user data
         $data = array(
             'name' => $name,
             'price' => $price,
-            'destination_id' => $id
+            'destination_id' => $id,
+            'picture' => $picture
         );
+        //Pass user data to model
         $this->db->insert('activities', $data);
 
         echo 'success';

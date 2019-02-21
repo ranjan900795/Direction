@@ -15,5 +15,6 @@ $(document).ready(function (){
     
     var registration_success = function (data) {
          alert('SUCCESS!!');
+         window.location = "../welcome/home";
     };
 });
