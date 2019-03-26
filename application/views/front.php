@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
     </head>
 <body>
 <p>

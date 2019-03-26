@@ -1,5 +1,5 @@
 .background{
-    background-image: url('/static/img/front.jpg');
+    background-image: url('tourism/static/img/front.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
     
@@ -20,13 +20,13 @@
 }
 
 .background_homepage{
-    background-image: url('/static/img/wonder1.jpg');
+    background-image: url('../../static/img/wonder1.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
 }
 
 .back{
-    background-image: url('/static/img/luggage.jpg');
+    background-image: url('tourism/static/img/luggage.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
 }
@@ -62,31 +62,31 @@
 }
 
 .north{
-    background-image: url('/static/img/north.jpg');
+    background-image: url('/tourism/static/img/north.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
 }
 
 .south{
-    background-image: url('/static/img/south.jpg');
+    background-image: url('/tourism/static/img/south.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
 }
 
 .east{
-    background-image: url('/static/img/east.jpeg');
+    background-image: url('/tourism/static/img/east.jpeg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
 }
 
 .west{
-    background-image: url('/static/img/west.jpeg');
+    background-image: url('/tourism/static/img/west.jpeg');
     background-repeat : no-repeat;
     background-size : 100% 100%;    
 }
 
 .central{
-    background-image: url('/static/img/central.jpg');
+    background-image: url('/tourism/static/img/central.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;    
 }
@@ -96,7 +96,7 @@
 }
 
 .background_img{
-    background-image: url('/static/img/luggage.jpg');
+    background-image: url('/tourism/static/img/luggage.jpg');
     background-repeat : no-repeat;
     background-size : 100% 100%;
 }

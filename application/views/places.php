@@ -1,20 +1,20 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row  my-5">
                 <div class="col-10 m-auto border">
-                    <form method="POST" action="../admin/places_upload" class="px-3 py-3">
+                    <form method="POST" action="../admin/places_upload" enctype="multipart/form-data" class="px-3 py-3">
 
                         <div class="form-group m-0 mb-2">
 
                             <input type="name" name="destination" class="col-12 form-control form-control-sm" placeholder="small letters Enter the destination name ">
                         </div> 
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Example file input</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="file">Image</label>
+                            <input type="file" name="file" class="form-control-file" id="file">
                         </div>
                         <div class="form-group col-md-4">
 

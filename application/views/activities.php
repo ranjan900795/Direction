@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
     </head>
     <body>
         <div class="container-fluid">
@@ -14,7 +14,7 @@
                         </div> 
 
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">image</label>
+                            <label for="file">image</label>
                             <input type="file" name="file" class="form-control-file" id="file">
                         </div>
 

@@ -26,6 +26,7 @@ class Registration extends CI_Controller {
     }
 
     public function signup_submit() {
+        
         $this->load->model('users');
         $this->users->get_usersdata();
         

@@ -1,12 +1,12 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
     </head>
     <body >
         <div class="container-fluid ">
             <div class="row">
                 <div class="col-12 h-50  p-0">
-                    <img src="/static/img/mumbai_dest.jpg" class="w-100 h-100"/>
+                    <img src="<?php echo base_url();?>static/img/mumbai_dest.jpg" class="w-100 h-100"/>
                 </div>
                 <div class="col px-5">
                     <div class="col-12 border ">
@@ -25,11 +25,12 @@
                             $name = $row->name;
                             $price = $row->price;
                             $id = $row->id;
+                            $image = $row->picture;
                             ?>
                             <div class="col-lg-2 col-sm-5 col-9 my-2 mx-lg-5 border p-0">
 
-                                <div class="col h-25 border">
-                                    1
+                                <div class="col h-25 border p-0">
+                                    <img src="<?php echo base_url();?>static/uploads/<?php print_r($image);?> " class="w-100 h-100"/>
                                 </div>
                                 <div class="col  border">
                                     <?php
@@ -44,7 +45,7 @@
                                             ?>
                                         </div>
                                         <div class="col-6 border p-0">
-                                            <a href="../../cart/add/<?php echo $id; ?> "><button type = "button" class = "btn btn-warning w-100 border-0">Add To Cart</button></a>
+                                            <a href="../../cart/add/<?php echo $id; ?> "><button type = "button" class = "btn btn-warning w-100 border-0 rounded-0">Add To Cart</button></a>
                                         </div>
                                     </div>
                                 </div>

@@ -3,8 +3,8 @@
         <title>
             Direction Account
         </title>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/static/css/style1.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/style1.css"/>
     </head>
     <body class="bg-light">
         <div class="container-fluid">
@@ -22,17 +22,17 @@
                     <div class="row">
                         <div class="col-sm-5 col-12 p-0 pt-2">
                             <div class="col-7 col-sm-9 m-auto  h-25 ">
-                                <img src="/static/img/user.png" class="h-100 w-100"/>
+                                <img src="<?php echo base_url();?>static/img/user.png" class="h-100 w-100"/>
                             </div>
                             <div class="col ">                               
                                 <form method="POST" id="register_form" class="mb-0">
-                                    <label for="exampleFormControlInput1" class="mt-1 font-weight-bold text-muted">Full Name</label>
-                                    <input type="text" name="Name" class="form-control mb-1 email text-muted" id="exampleFormControlInput1" placeholder="Enter your FullName">
+                                    <label for="fullname" class="mt-1 font-weight-bold text-muted">Full Name</label>
+                                    <input type="text" name="Name" class="form-control mb-1 email text-muted" id="fullname" placeholder="Enter your FullName">
                                     
-                                    <label for="exampleFormControlInput1" class="mt-1 font-weight-bold text-muted">Email</label>
-                                    <input type="email" name="e-mail" class="form-control mb-1 email text-muted" id="exampleFormControlInput1" placeholder="name@example.com">
-                                    <label for="exampleFormControlInput1" class="mt-1 font-weight-bold text-muted">Password</label>
-                                    <input type="password" name="pass" class="form-control mb-0 email text-muted" id="exampleFormControlInput1" placeholder="********">
+                                    <label for="email" class="mt-1 font-weight-bold text-muted">Email</label>
+                                    <input type="email" name="e-mail" class="form-control mb-1 email text-muted" id="email" placeholder="name@example.com">
+                                    <label for="password" class="mt-1 font-weight-bold text-muted">Password</label>
+                                    <input type="password" name="pass" class="form-control mb-0 email text-muted" id="password" placeholder="********">
                                     <small id="passwordHelpInline" class="text-muted ">
                                     Must be 8-20 characters long.
                                     </small>
@@ -44,15 +44,15 @@
                         </div>
                         <div class="col-sm-7 col-12  d-flex py-2">
                             <div class="col-11 m-auto height d-flex align-items-center p-0 ">
-                                <img src="/static/img/buddha.jpeg" class="w-100 h-100 img"/>
+                                <img src="<?php echo base_url();?>static/img/buddha.jpeg" class="w-100 h-100 img"/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="/static/js/loginscript.js"></script>
-        <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="/static/js/register.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/loginscript.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/register.js"></script>
     </body>
 </html>

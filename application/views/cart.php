@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
     </head>
     <body>
         <div class="container-fluid bg-light">
@@ -102,9 +102,9 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="/static/js/bootstrap.js"></script>
-        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/static/js/cart.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/bootstrap.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/cart.js"></script>
     </body>
 </html>

@@ -1,8 +1,9 @@
 <html>
     <head>
+        
         <title>Direction-Packages,Guide,Rentals and Things To Do</title>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/static/css/style.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url();?>static/css/style.css"/>
 
     </head>
     <body class="bg-light">
@@ -54,7 +55,7 @@
                     <div class="row ">
                         <div class="col-12  p-0 col-sm-4  ">
                             <div class="col-7 col-sm-12 p-0">
-                                <img src="/static/img/rental.png" class="w-100 h-100"/> 
+                                <img src="<?php echo base_url();?>static/img/rental.png" class="w-100 h-100"/> 
                             </div>
                         </div>
                         <div class="col-12 p-0 col-sm-8   d-flex">
@@ -68,7 +69,7 @@
                     <div class="row">
                         <div class="col-12 p-0 col-sm-4  ">
                             <div class="col-7 col-sm-12 p-0">
-                                <img src="/static/img/price.png" class="w-100 h-100"/> 
+                                <img src="<?php echo base_url();?>static/img/price.png" class="w-100 h-100"/> 
                             </div>
                         </div>
                         <div class="col-12 p-0 col-sm-8  d-flex">
@@ -82,7 +83,7 @@
                     <div class="row">
                         <div class="col-12 p-0 col-sm-4">
                             <div class="col-7 col-sm-12 p-0">
-                                <img src="/static/img/guide.jpeg" class="w-100 h-100"/> 
+                                <img src="<?php echo base_url();?>static/img/guide.jpeg" class="w-100 h-100"/> 
                             </div>
                         </div>
                         <div class="col-12 p-0 col-sm-8  d-flex">
@@ -167,7 +168,7 @@
                     <div class="row ">
                         <div class="col-12 col-md-6 py-4 ">
                             <div class="col-11 h-25 p-0 m-auto ml-md-4 border">
-                                <img src="/static/img/north-east.jpg" class="w-100 h-100"/>
+                                <img src="<?php echo base_url();?>static/img/north-east.jpg" class="w-100 h-100"/>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 py-4 ">
@@ -179,7 +180,7 @@
                     <div class="row ">
                         <div class="col-12 col-md-6 py-4 ">
                             <div class="col-11 h-25 p-0 m-auto ml-md-4 border">
-                                <img src="/static/img/andaman.jpg" class="w-100 h-100"/>
+                                <img src="<?php echo base_url();?>static/img/andaman.jpg" class="w-100 h-100"/>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 py-4 ">
@@ -193,7 +194,7 @@
                     <div class="row ">
                         <div class="col-12 col-md-6 py-4 ">
                             <div class="col-11  h-25 p-0 m-auto ml-md-3  border">
-                                <img src="/static/img/varanasi.jpg" class="w-100 h-100"/>
+                                <img src="<?php echo base_url();?>static/img/varanasi.jpg" class="w-100 h-100"/>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 py-4 ">
@@ -205,7 +206,7 @@
                     <div class="row ">
                         <div class="col-12 col-md-6 py-4">
                             <div class="col-11 h-25 p-0 m-auto ml-md-3 border">
-                                <img src="/static/img/ladakh.jpg" class="w-100 h-100"/>
+                                <img src="<?php echo base_url();?>static/img/ladakh.jpg" class="w-100 h-100"/>
                             </div>
                         </div>
                         <div class="col-12 col-md-6  py-4">
@@ -227,7 +228,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 p-0 pl-md-4 pl-4">
                     <div class="col-11 h-25 m-0 p-0">
-                        <img src="/static/img/rental.jpg" class="w-100 h-100"/>
+                        <img src="<?php echo base_url();?>static/img/rental.jpg" class="w-100 h-100"/>
                     </div>
                     <div class="col-11 p-0">
                         <p class="m-0 my-2 h5 font-weight-bold">Rent a Car</p>
@@ -236,7 +237,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 p-0 pl-4 pl-md-0">
                     <div class="col-11 h-25 m-0 p-0">
-                        <img src="/static/img/tour_guide.jpg" class="w-100 h-100"/>
+                        <img src="<?php echo base_url();?>static/img/tour_guide.jpg" class="w-100 h-100"/>
                     </div>
                     <div class="col-11 p-0">
                         <p class="m-0 my-2 h5 font-weight-bold">Guide On Demand</p>
@@ -245,7 +246,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 p-0 pl-md-0 pl-4">
                     <div class="col-11 h-25 m-0 p-0">
-                        <img src="/static/img/restaurant.jpg" class="w-100 h-100"/>
+                        <img src="<?php echo base_url();?>static/img/restaurant.jpg" class="w-100 h-100"/>
                     </div>
                     <div class="col-11 p-0">
                         <p class="m-0 my-2 h5 font-weight-bold">Food In Ur Direction</p>
@@ -254,7 +255,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 p-0 pr-md-4 pl-4 pr-4 pl-md-0">
                     <div class="col-12 h-25 m-0 p-0">
-                        <img src="/static/img/hotels.jpg" class="w-100 h-100"/>
+                        <img src="<?php echo base_url();?>static/img/hotels.jpg" class="w-100 h-100"/>
                     </div>
                     <div class="col-12 p-0">
                         <p class="m-0 my-2 h5 font-weight-bold">Hotel Booking</p>
@@ -291,8 +292,8 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="/static/js/homescript.js"></script>
-        <script type="text/javascript" src="/static/js/bootstrap.js"></script>
-        <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/homescript.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/bootstrap.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>static/js/jquery-3.3.1.min.js"></script>
     </body>
 </html>

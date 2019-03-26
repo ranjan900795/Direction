@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>Direction-Visit North India</title>
-        <link rel="stylesheet" href="/static/css/bootstrap.css"/>
-        <link rel="stylesheet" href="/static/css/compass_style.css"/>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/bootstrap.css"/>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/compass_style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
@@ -66,21 +66,23 @@
                 <div class="col-12 pl-5">
                     <div class="col-11 m-auto">
                         <div class="row mt-4">
-                            <?php foreach ($part as $row) { 
-                                $dest = $row->dest; ?>
+                            <?php
+                            foreach ($part as $row) {
+                                $dest = $row->dest;
+                                $image = $row->picture
+                                ?>
                                 <div class="col-md-4 col-12 mb-4">                                
                                     <div class="row ">
-                                        <div class="col-4 rounded-left border field_height">
-                                            1
+                                        <div class="col-4 rounded-left  field_height p-0">
+                                            <img src="<?php echo base_url(); ?>static/uploads/<?php print_r($image); ?>" class="w-100 h-100 rounded-left"/>
                                         </div>
-                                        <div class="col-7 rounded-right border field_height d-flex align-items-center">
+                                        <div class="col-7 rounded-right  field_height d-flex align-items-center">
                                            
                                             <p class="font-weight-bold text-uppercase my-2 text-center font_style"><a href="../../compass/destination/<?php print_r($dest) ?>" class="text-dark">
-                                                trips to
-                                                <?php                                             
-                                                                                                
-                                                print_r( $dest);
-                                                ?></a></p>
+                                            trips to
+                                            <?php
+                                            print_r($dest);
+                                            ?></a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -102,14 +104,14 @@
                 <div class="col-11 m-auto">
                     <div class="row my-5">
                         <div class="col-md-5 col-11 m-auto h-50 p-0">
-                            <img src="/static/img/hotel.jpeg" class="w-100 h-100 rounded"/>
+                            <img src="<?php echo base_url(); ?>static/img/hotel.jpeg" class="w-100 h-100 rounded"/>
                             <div class="carousel-caption">
                                 <p class="text-center text-white font-weight-bold m-0 h4 img-fluid">Discover your dream Hotel</p>
                                 <p class="text-center text-white font-weight-bold m-0 h5">Find the best Deals.</p>
                             </div>
                         </div>
                         <div class="col-md-5 col-11 m-auto h-50 p-0">
-                            <img src="/static/img/cars.jpg" class="w-100 h-100 rounded"/>
+                            <img src="<?php echo base_url(); ?>static/img/cars.jpg" class="w-100 h-100 rounded"/>
                             <div class="carousel-caption">
                                 <p class="text-center text-white font-weight-bold m-0 h4 img-fluid">Rent your dream Cars</p>
                                 <p class="text-center text-white font-weight-bold m-0 h5">Drive cars which u always want to drive.</p>
@@ -128,21 +130,21 @@
                 <div class="col-9 col-md-11 m-auto ">
                     <div class="row mt-4">
                         <div class="col-md-4 col-12 mb-2 mb-md-0 h-25 p-0">
-                            <img src="/static/img/september_1.jpg" class="w-100 h-100 rounded-left"/>
+                            <img src="<?php echo base_url(); ?>static/img/september_1.jpg" class="w-100 h-100 rounded-left"/>
                             <div class="carousel-caption p-0 ">
                                 <p class="text-center text-danger font-weight-bold h4 m-0 img-fluid">Spiti valley: 2D/3N</p>
                                 <p class="text-center text-white font-weight-bold m-0 ">Exclusive price of Rs.2999</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-12 mb-2 mb-md-0 h-25 p-0">
-                            <img src="/static/img/september_2.jpg" class="w-100 h-100"/>
+                            <img src="<?php echo base_url(); ?>static/img/september_2.jpg" class="w-100 h-100"/>
                             <div class="carousel-caption p-0">
                                 <p class="text-center text-danger font-weight-bold m-0 h4 img-fluid">Amritsar: 2D/3N</p>
                                 <p class="text-center text-white font-weight-bold m-0 h5">Exclusive price of Rs. 2499</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-12 mb-2 mb-md-0 h-25 p-0">
-                            <img src="/static/img/september_3.jpg" class="w-100 h-100 rounded-right"/>
+                            <img src="<?php echo base_url(); ?>static/img/september_3.jpg" class="w-100 h-100 rounded-right"/>
                             <div class="carousel-caption p-0">
                                 <p class="text-center text-danger font-weight-bold m-0 h4 img-fluid">Srinagar: 2D/3N</p>
                                 <p class="text-center text-white font-weight-bold m-0 h5">Exclusive price of Rs.3599</p>
@@ -157,6 +159,6 @@
                 </div>
             </div>           
         </div>
-        <script type="text/javascript" src="/static/js/compass.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>static/js/compass.js"></script>
     </body>
 </html>
