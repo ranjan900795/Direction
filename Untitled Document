@@ -65,8 +65,16 @@ CREATE TABLE cart(
     REFERENCES users(id)
 ); 
 
-INSERT INTO south (destination)
-	VALUES ("TRIPS TO KERELA"); 
+CREATE TABLE admin(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY(id)
+    
+);
+
+INSERT INTO admin(name,password)
+    VALUES("Direction","Direction@16");
 	
 INSERT INTO south (destination)
 	VALUES ("TRIPS TO kARNATAKA"); 

@@ -19,6 +19,32 @@ class Admin extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+    public function login() {
+        $this->load->view('admin_login');
+    }
+    
+    public function login_submit() {
+        $this->load->model('administrator');
+        $admin_id = $this->administrator->admin_login();
+    
+        if (!$admin_id) {
+            echo 'Authentication unsuccessful';
+        } else {
+            //session_start();
+            $_SESSION['id'] = $admin_id;
+            header("location:../admin/home");
+        }
+    }
+    
+    public function home() {
+        if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
+            $this->load->view('admin_home');
+        } else {
+            header("location:../admin/login");
+        }
+        
+    }
+    
     public function places() {
         $this->load->view('places');
     }
