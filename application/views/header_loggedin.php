@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="<?php echo base_url();?>static/css/bootstrap.css"/>
         <link rel="stylesheet" href="<?php echo base_url();?>static/css/style_header.css"/>
     </head>
-    <body ">
+    <body >
         <div class="container-fluid p-0">
             <div class="col-12 p-0 bg-white top">
                 <nav class="navbar navbar-expand-lg navbar-light p-0 ">

@@ -31,7 +31,13 @@ INSERT INTO india (parts)
 CREATE TABLE destination(
     id int NOT NULL AUTO_INCREMENT,
     dest varchar(355) NOT NULL,
-    india_id int NOT NULL,
+    india_id int NOT NULL, 
+    picture varchar(255) NOT NULL,
+    description varchar(32765),    
+    december varchar(25) NOT NULL,
+    march varchar(25) NOT NULL,
+    june varchar(25) NOT NULL,
+    september varchar(25) NOT NULL,
     PRIMARY KEY (`id`),
     FOREIGN KEY fk_india(india_id)
     REFERENCES india(id)
@@ -76,7 +82,21 @@ CREATE TABLE admin(
 INSERT INTO admin(name,password)
     VALUES("Direction","Direction@16");
 	
-INSERT INTO south (destination)
-	VALUES ("TRIPS TO kARNATAKA"); 
-	
+    ALTER TABLE destination
+    ADD COLUMN description varchar(32765);	
+    
+    ALTER TABLE destination
+    ADD COLUMN dec VARCHAR(25) NOT NULL;
+    
+    ALTER TABLE destination
+    ADD COLUMN mar varchar(25);
+    
+    ALTER TABLE destination
+    ADD COLUMN jun varchar(25);
+    
+    ALTER TABLE destination
+    ADD COLUMN sep varchar(25);
+    
+    ALTER TABLE destination
+    ADD COLUMN dec VARCHAR(15) AFTER description;
  

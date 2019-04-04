@@ -43,13 +43,22 @@ class Compass extends CI_Controller {
         if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
             $this->load->view('header_loggedin');
             $this->load->model('places');
-            $activity['activity'] = $this->places->activities_select($dest);
+            $query = $this->places->activities_select($dest);
+            $activity['activity']=$query['activities'];
+            
+            $activity['destination']=$query['destination'];
+            $activity['nearby']=$query['all_dest'];
             $this->load->view('destination', $activity);
             $this->load->view('footer');
         } else {
             $this->load->view('header');
             $this->load->model('places');
-            $activity['activity'] = $this->places->activities_select($dest);
+            $query = $this->places->activities_select($dest);
+            $activity['activity']=$query['activities'];
+            
+            $activity['destination']=$query['destination'];
+            $activity['nearby']=$query['all_dest'];
+            
             $this->load->view('destination', $activity);
             $this->load->view('footer');
         }

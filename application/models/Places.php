@@ -29,17 +29,22 @@ class Places extends CI_Model {
     public function upload_places() {
         $destination = $_POST["destination"];
         $part = $_POST["part"];
+        $description = $_POST["description"];
+        $dec = $_POST["dec"];
+        $mar = $_POST["mar"];
+        $jun = $_POST["jun"];
+        $sep = $_POST["sep"];
         $config['upload_path'] = "./static/uploads/";
-        
+
         $config['allowed_types'] = 'jpg|jpeg|png|gif';
         $config['file_name'] = $_FILES['file']['name'];
-        
+
         $error = $_FILES['file']['error'];
-        
-        if (move_uploaded_file($_FILES["file"]["tmp_name"], $config['upload_path'].$config['file_name'])) {
+
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $config['upload_path'] . $config['file_name'])) {
             $picture = $config['file_name'];
         } else {
-            echo 'sorry'; 
+            echo 'sorry';
             echo $error;
         }
         $this->db->select('id');
@@ -48,8 +53,8 @@ class Places extends CI_Model {
         foreach ($query->result() as $row) {
             $id = $row->id;
         }
-        $data = ['dest' => $destination,         'india_id' => $id,          'picture' => $picture
-            ];
+        $data = ['dest' => $destination, 'india_id' => $id, 'picture' => $picture, 'description' => $description,   'december'=>$dec,    'march'=>$mar,    'june'=>$jun,    'september'=>$sep
+        ];
         $this->db->insert('destination', $data);
 
         echo 'success';
@@ -71,7 +76,7 @@ class Places extends CI_Model {
 
         echo $config['file_name'];
 
-        if (move_uploaded_file($_FILES["file"]["tmp_name"], $config['upload_path'].$config['file_name'])) {
+        if (move_uploaded_file($_FILES["file"]["tmp_name"], $config['upload_path'] . $config['file_name'])) {
             $picture = $config['file_name'];
         } else {
             echo 'sorry';
@@ -109,7 +114,21 @@ class Places extends CI_Model {
 
         $this->db->where('destination_id', "$id");
         $list = $this->db->get('activities');
-        return($list->result());
+        
+        $this->db->where('id',$id);
+        $data=$this->db->get('destination');
+        foreach ($data->result() as $value) {
+            $india_id = $value->india_id;
+        }
+        
+        $this->db->where('india_id',$india_id);
+        $all_dest = $this->db->get('destination');
+        
+        return array(
+            'activities' => $list->result(),
+            'destination' => $data->result(),
+            'all_dest' => $all_dest->result()
+        );
     }
 
     

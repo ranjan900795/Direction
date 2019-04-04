@@ -45,9 +45,25 @@ class Admin extends CI_Controller {
         
     }
     
-    public function places() {
-        $this->load->view('places');
+    public function add_venue() {
+        if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
+            $this->load->view('admin_venue');
+        } else {
+            header("location:../admin/login");
+        }
+        
     }
+    
+    public function add_activities() {
+        if (isset($_SESSION['id']) && $_SESSION['id'] != NULL) {
+            $this->load->view('admin_activities');
+        } else {
+            header("location:../admin/login");
+        }
+        
+    }
+    
+    
     
     public function places_upload() {
         $this->load->model('places');
@@ -55,9 +71,7 @@ class Admin extends CI_Controller {
         
     }
     
-    public function activities() {
-        $this->load->view('activities');
-    }
+    
     
     public function activities_upload() {
         $this->load->model('places');
